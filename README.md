@@ -87,21 +87,26 @@ Performance requirements.  Your randomized queue implementation must support eac
 Client. Write a client program Permutation.java that takes an integer k as a command-line argument; reads a sequence of strings from standard input using StdIn.readString(); and prints exactly k of them, uniformly at random. Print each item from the sequence at most once.
 
 ~/Desktop/queues> cat distinct.txt
+    
 A B C D E F G H I
 
 ~/Desktop/queues> java Permutation 3 < distinct.txt
+                                                   
 C
 G
 A
 
 ~/Desktop/queues> java Permutation 3 < distinct.txt
+                                                   
 E
 F
 G
 ~/Desktop/queues> cat duplicates.txt
+    
 AA BB BB BB BB BB CC CC
 
 ~/Desktop/queues> java Permutation 8 < duplicates.txt
+                                                     
 BB
 AA
 BB
@@ -110,6 +115,8 @@ BB
 BB
 CC
 BB
+
+                                                     
 Your program must implement the following API:
 
 public class Permutation {
